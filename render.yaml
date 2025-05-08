@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: sukriti-designs
+    env: dotnet
+    buildCommand: dotnet publish -c Release -o out
+    startCommand: dotnet out/Dummy_Proj.dll
+    region: oregon
+    branch: main
+    repo: https://github.com/Nehaa360/Sukriti-Website
